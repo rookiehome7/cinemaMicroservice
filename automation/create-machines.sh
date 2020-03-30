@@ -1,0 +1,3 @@
+docker-machine create -d virtualbox --virtualbox-disk-size "10000" --virtualbox-memory "512" --virtualbox-boot2docker-url=https://github.com/boot2docker/boot2docker/releases/download/v1.13.0/boot2docker.iso manager1
+docker-machine create -d virtualbox --virtualbox-disk-size "10000" --virtualbox-memory "512" --virtualbox-boot2docker-url=https://github.com/boot2docker/boot2docker/releases/download/v1.13.0/boot2docker.iso worker1
+docker-machine create -d virtualbox --virtualbox-disk-size "10000" --virtualbox-memory "512" --virtualbox-boot2docker-url=https://github.com/boot2docker/boot2docker/releases/download/v1.13.0/boot2docker.iso worker2
