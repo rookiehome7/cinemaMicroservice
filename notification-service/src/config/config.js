@@ -5,7 +5,7 @@ const serverSettings = {
 
 // as a better practice we can pass this values via env variables
 const smtpSettings = {
-  service: 'Gmail',
+  service: 'gmail',
   user: process.env.EMAIL,
   pass: process.env.EMAIL_PASS
 }

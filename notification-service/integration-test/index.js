@@ -2,7 +2,8 @@
 const supertest = require('supertest')
 
 describe('Notification Service', () => {
-  const api = supertest('http://192.168.99.119:3004')
+  // const api = supertest('http://192.168.99.119:3004')
+  const api = supertest('localhost:3000')
   const payload = {
     city: 'Morelia',
     userType: 'loyal',
@@ -20,8 +21,8 @@ describe('Notification Service', () => {
     orderId: '1aa90cx',
     description: 'some description',
     user: {
-      name: 'Cristian Ramirez',
-      email: 'cristiano.rosetti@gmail.com'
+      name: 'Takdanai Jirawanichkul',
+      email: 'rookiehome7@gmail.com'
     }
   }
 

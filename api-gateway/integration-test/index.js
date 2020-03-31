@@ -38,7 +38,7 @@ describe('API Gateway Service', () => {
         number: '4242424242424242',
         cvc: '123',
         exp_month: '12',
-        exp_year: '2017'
+        exp_year: '2022'
       },
       membership: '7777888899990000'
     }
@@ -73,7 +73,7 @@ describe('API Gateway Service', () => {
       number: '4242424242424242',
       cvc: '123',
       exp_month: '12',
-      exp_year: '2017',
+      exp_year: '2022',
       amount: 71,
       description: `
         Tickect(s) for movie "Assasins Creed",

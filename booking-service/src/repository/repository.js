@@ -36,6 +36,7 @@ const repository = (container) => {
         if (err) {
           reject(new Error('an error occured registring a ticket, err:' + err))
         }
+        // resolve(ticket)
         resolve(payload)
       })
     })

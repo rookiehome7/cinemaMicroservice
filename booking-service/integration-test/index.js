@@ -2,7 +2,9 @@
 const supertest = require('supertest')
 
 describe('Booking Service', () => {
+  // const api = supertest('https://192.168.99.119:8080')
   const api = supertest('http://192.168.99.119:3002')
+  // const api = supertest('localhost:3000')
   const now = new Date()
   now.setDate(now.getDate() + 1)
   const user = {
@@ -13,7 +15,7 @@ describe('Booking Service', () => {
       number: '4242424242424242',
       cvc: '123',
       exp_month: '12',
-      exp_year: '2017',
+      exp_year: '2021',
     },
     membership: '7777888899990000'
   }
@@ -27,6 +29,7 @@ describe('Booking Service', () => {
     },
     schedule: now.toString(),
     cinemaRoom: 7,
+    // cinemaRoom: 1,
     seats: ['45'],
     totalAmount: 71
   }

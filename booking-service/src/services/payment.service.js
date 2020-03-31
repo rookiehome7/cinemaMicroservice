@@ -5,6 +5,7 @@ process.env.NODE_TLS_ACCEPT_UNTRUSTED_CERTIFICATES_THIS_IS_INSECURE = '1'
 module.exports = (paymentOrder) => {
   return new Promise((resolve, reject) => {
     supertest('https://192.168.99.119:8080')
+    // supertest('localhost:3001')
       .post('/payment/makePurchase')
       .send({paymentOrder})
       .end((err, res) => {

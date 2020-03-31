@@ -13,6 +13,7 @@ const repository = (container) => {
           }
         }))
 
+
       const mailOptions = {
         from: '"Do Not Reply, Cinemas Company 👥" <no-replay@cinemas.com>',
         to: `${payload.user.email}`,
